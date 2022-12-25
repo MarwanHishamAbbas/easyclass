@@ -38,6 +38,7 @@
                     minlength="4"
                     class="input-field"
                     autocomplete="off"
+                    name="email"
                     required
                   />
                   <label>Email</label>
@@ -50,21 +51,19 @@
                     class="input-field"
                     autocomplete="off"
                     required
+                    name="password"
                   />
                   <label>Password</label>
                 </div>
-
-                <input type="submit" value="Sign In" class="sign-btn" />
-
+                <input name="login" type="submit" value="Sign In" class="sign-btn"  />
                 <p class="text">
                   Forgotten your password or you login datails?
                   <a href="#">Get help</a> signing in
                 </p>
               </div>
             </form>
-
             <form
-              action="index.html"
+              action=""
               method="POST"
               autocomplete="off"
               class="sign-up-form"
@@ -89,7 +88,7 @@
                 {% endfor %}
                 
                 </div>
-                <input type="submit" value="Sign Up" class="sign-btn" />
+                <input name="register" type="submit" value="Sign Up" class="sign-btn"  />
 
                 <p class="text">
                   By signing up, I agree to the
